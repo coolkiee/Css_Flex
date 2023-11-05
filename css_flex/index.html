@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .header{
+            background-color: #1abc9c;
+            margin: 0 15%;
+            padding: 60px;
+            color: white;
+            text-align: center;
+        }
+        .menu{
+            background-color: #333;
+            margin: 0 15%;
+            display: flex;
+            
+        }
+        .menu a{
+            padding: 14px 20px;
+            color: white;
+            text-decoration: none;
+            text-align: center;
+            border: 1px solid #333;
+        }
+        .menu a:hover{
+            background-color: #ddd;
+            color: black;
+            border: 1px solid #ddd;
+        }
+        .title{
+            display: flex;
+        }
+        .side{
+            flex: 30%;
+            background-color: #f1f1f1;
+            margin:1% 1% 1% 15%;
+            padding: 1%;
+        }
+        .main{
+            flex: 70%;
+            margin:1% 15% 1% 1%;
+            padding: 1%;
+        }
+        .fakeimg{
+            height: 200px;
+            background-color: rgb(143, 143, 143);
+            padding: 2% 2%;
+        }
+        .sfakeimg{
+            height: 50px;
+            background-color: rgb(143, 143, 143);
+            padding: 5% 5%;
+            margin: 5% 0;
+        }
+        .footer{
+            background-color: #ddd;
+            margin: 0 15%;
+            padding: 1% 0;
+            text-align: center;
+        }
+        @media screen and (max-width:800px) {
+            .title, .menu{
+                flex-direction: column;
+            }
+            .side{
+                margin-right: 15%;
+            }
+            .main{
+                margin-left: 15%;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="sayfa">
+        <div style="background-color: yellow; padding: 5px; margin: 0 15%;">
+            <h4 style="text-align: center;">Resize the browser window to see the responsive effect.</h4>
+        </div>
+        <div class="header">
+            <h1>My Website</h1>
+            With a <b>Flexible</b> layout.
+        </div>
+        <div class="menu">
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </div>
+        <div class="title">
+            <div class="side">
+                <h2 >About Me</h2>
+                <h5>Photo of me:</h5>
+                <div class="fakeimg">Image</div>
+                <p>Some text about me in a culpa qui olficia deserunt mollit anim...</p>
+                <h2>More Text</h2>
+                <h5>Lorem ipsum dolor sit amet.</h5>
+                <div class="sfakeimg">Image</div>
+                <div class="sfakeimg">Image</div>
+                <div class="sfakeimg">Image</div>
+
+            </div>
+            <div class="main">
+                <h2>TITLE HEAD</h2>
+                <h5>Title description, Dec 7,2023</h5>
+                <div class="fakeimg">Image</div>
+                <p>Some Text...</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad vitae saepe impedit repellendus eum corrupti, tempore veritatis libero quis! Tempora nam ea tempore ratione pariatur natus et mollitia? Ipsa, incidunt!</p><br>
+                <h2>TITLE HEADING</h2>
+                <p>Title description, Sep 2, 2023</p>
+                <div class="fakeimg">Image</div>
+                <p>Some text...</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia suscipit illum, aliquid sapiente doloremque esse itaque iure deserunt accusantium sequi possimus odio cumque! Voluptas ratione et voluptates blanditiis, debitis dolor.</p><br>
+            </div>
+        </div>
+        <div class="footer">
+            <h2>Footer</h2>
+        </div>
+    </div>
+</body>
+</html>
